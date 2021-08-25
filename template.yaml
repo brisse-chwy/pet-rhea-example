@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1beta2
-kind: Template
+kind: Service
 metadata:
   title: Pet Example TF
   name: pet-example-tf
@@ -47,13 +47,13 @@ spec:
           ui:options:
             rows: 5
 
-# here's the steps that are executed in series in the scaffolder backend
-steps:
-  - id: rhea-create
-    name: Rhea Create
-    action: rhea:create
-    input:
-      url: ./template
-      values:
-        name: '{{ parameters.name }}'
+  # here's the steps that are executed in series in the scaffolder backend
+  steps:
+    - id: rhea-create
+      name: Rhea Create
+      action: rhea:create
+      input:
+        url: ./template
+        values:
+          name: '{{ parameters.name }}'
  
