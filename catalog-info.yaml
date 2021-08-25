@@ -5,10 +5,6 @@ metadata:
   name: pet-example-tf
   tags: ['terraform']
   description: The Pet Store Example Terraform
-  links:
-    - url: https://github.com/Chewy-Inc/pet-tf-tpl
-      title: Pet Example Terraform
-      icon: github
 spec:
   type: service
   lifecycle: experimental
