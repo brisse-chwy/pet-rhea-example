@@ -1,0 +1,65 @@
+apiVersion: backstage.io/v1beta2
+kind: Service
+metadata:
+  title: Pet Example TF
+  name: pet-example-tf
+  tags: ['terraform']
+  description: The Pet Store Example Terraform
+  links:
+    - url: https://github.com/Chewy-Inc/pet-tf-tpl
+      title: Pet Example Terraform
+      icon: github
+    - url: https://github.com/Chewy-Inc/pet-db-tpl
+      title: Pet Example Database
+      icon: github
+spec:
+  type: service
+  lifecycle: experimental
+  owner: pet-cronus
+  # these are the steps which are rendered in the frontend with the form input
+  parameters:
+    - title: Basic Information
+      required:
+        - REPO_NAME
+        - VERTICAL_NAME
+        - APP_NAME
+        - OWNER_EMAIL
+      properties:
+        REPO_NAME:
+          title: Repository Name
+          type: string
+          description: Unique name of the repository
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+        VERTICAL_NAME:
+          title: Vertical Name
+          type: string
+          description: Unique name of the vertical
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+        APP_NAME:
+          title: Application Name
+          type: string
+          description: Unique name of the application
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+        OWNER_EMAIL:
+          title: Owner Email
+          type: string
+          description: Email of the owner
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+
+# here's the steps that are executed in series in the scaffolder backend
+steps:
+  - id: rhea-create
+    name: Rhea Create
+    action: rhea:create
+    input:
+      url: ./template
+      values:
+        name: '{{ parameters.name }}'
