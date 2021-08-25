@@ -5,6 +5,13 @@ metadata:
   name: pet-example-tf
   tags: ['terraform']
   description: The Pet Store Example Terraform
+  links:
+    - url: https://github.com/Chewy-Inc/pet-tf-tpl
+      title: Pet Example Terraform
+      icon: github
+    - url: https://github.com/Chewy-Inc/pet-db-tpl
+      title: Pet Example Database
+      icon: github
 spec:
   type: service
   lifecycle: experimental
@@ -56,4 +63,3 @@ spec:
         url: ./template
         values:
           name: '{{ parameters.name }}'
- 
