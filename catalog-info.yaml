@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1beta2
-kind: Service
+kind: Template
 metadata:
   title: Pet Example TF
   name: pet-example-tf
