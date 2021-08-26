@@ -62,4 +62,7 @@ spec:
       input:
         url: ./template
         values:
-          name: '{{ parameters.name }}'
+          REPO_NAME: '{{ parameters.REPO_NAME }}'
+          VERTICAL_NAME: '{{ parameters.VERTICAL_NAME }}'
+          APP_NAME: '{{ parameters.APP_NAME }}'
+          OWNER_EMAIL: '{{ parameters.OWNER_EMAIL }}'
