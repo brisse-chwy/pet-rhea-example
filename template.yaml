@@ -73,4 +73,13 @@ spec:
       input:
         repoContentsUrl: 'https://github.com/brisse-chwy/pet-rhea-example/blob/main'
         catalogInfoPath: '/catalog-info.yaml'
+            
+  output:
+   links:
+     - title: Github Repository
+       url: https://github.com/brisse-chwy/pet-rhea-example
+       # '{{ steps.publish.output.remoteUrl }}'
+     - title: Open in catalog
+       icon: 'catalog'
+       entityRef: {{ steps.register.output.entityRef }}
  
