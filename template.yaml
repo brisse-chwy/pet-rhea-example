@@ -67,9 +67,9 @@ spec:
           APP_NAME: '{{ parameters.APP_NAME }}'
           OWNER_EMAIL: '{{ parameters.OWNER_EMAIL }}'
           
-    - id: catalog-write
-      name: Write Catalog information
-      action: catalog:write
+    - id: catalog-register
+      name: Register Catalog information
+      action: catalog:register
       input:
         component:
           apiVersion: 'backstage.io/v1beta2'
