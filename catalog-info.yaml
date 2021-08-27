@@ -1,4 +1,4 @@
-apiVersion: backstage.io/v1beta2
+apiVersion: backstage.io/v1alpha1
 kind: Service
 metadata:
   name: test-pet-example-tf
