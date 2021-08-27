@@ -67,7 +67,7 @@ spec:
           APP_NAME: '{{ parameters.APP_NAME }}'
           OWNER_EMAIL: '{{ parameters.OWNER_EMAIL }}'
           
-    - id: catalog-register
+    - id: register
       name: Register Catalog information
       action: catalog:register
       input:
