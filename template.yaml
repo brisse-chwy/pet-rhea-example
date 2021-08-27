@@ -71,7 +71,7 @@ spec:
       name: Register Catalog information
       action: catalog:register
       input:
-        repoContentsUrl: 'https://github.com/brisse-chwy/pet-rhea-example'
+        repoContentsUrl: 'https://github.com/brisse-chwy/pet-rhea-example/blob/main'
         catalogInfoPath: '/catalog-info.yaml'
             
   output:
