@@ -77,7 +77,7 @@ spec:
   output:
    links:
      - title: Github Repository
-       url: https://github.com/brisse-chwy/pet-rhea-example
+       url: 'https://github.com/brisse-chwy/pet-rhea-example'
        # '{{ steps.publish.output.remoteUrl }}'
      - title: Open in catalog
        icon: 'catalog'
