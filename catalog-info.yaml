@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1beta2
+kind: Service
+metadata:
+  name: test-pet-example-tf
+  description: |
+    Terraform Pet Example
+  links:
+    - title: Website
+      url: http://backstage.io
+    - title: Documentation
+      url: https://backstage.io/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
+  annotations:
+    github.com/project-slug: brisse-chwy/pet-rhea-example
+spec:
+  type: service
+  owner: brisse@chewy.com
+  lifecycle: experimental
