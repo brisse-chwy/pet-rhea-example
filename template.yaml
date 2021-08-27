@@ -71,17 +71,8 @@ spec:
       name: Register Catalog information
       action: catalog:register
       input:
-        component:
-          apiVersion: 'backstage.io/v1beta2'
-          kind: Service
-          metadata:
-            name: '{{ parameters.REPO_NAME }}'
-            annotations:
-              github.com/project-slug: '{{ projectSlug parameters.REPO_NAME }}'
-          spec:
-            type: service
-            lifecycle: production
-            owner: '{{ parameters.OWNER_EMAIL }}'
+        repoContentsUrl: 'https://github.com/brisse-chwy/pet-rhea-example'
+        catalogInfoPath: '/catalog-info.yaml'
             
   output:
    links:
